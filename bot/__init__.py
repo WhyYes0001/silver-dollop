@@ -1,0 +1,1 @@
+"""Polymarket weather trading bot."""
