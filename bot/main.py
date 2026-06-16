@@ -11,7 +11,19 @@ from .notifier import build_application, send_daily_report, send_error_alert, se
 from .order_engine import calc_order_size_details, execute_signal
 from .safety import can_trade, check_kill_switch
 from .signal_engine import find_all_signals
+import time
 
+def main():
+    print("Bot running...")
+    # your existing code
+
+if __name__ == "__main__":
+    while True:
+        try:
+            main()
+        except Exception as e:
+            print("ERROR:", e)
+        time.sleep(10)
 
 def setup_logging() -> None:
     log.remove()
