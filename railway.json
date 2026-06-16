@@ -1,15 +1,7 @@
 {
-"$schema": "https://schema.railpack.com",
-"provider": "python",
-"packages": {
-"python": "3.11"
-},
-"steps": {
-"install": {
-"commands": [
-"pip install -r bot/requirements.txt"
-]
-}
+"$schema": "https://railway.app/railway.schema.json",
+"build": {
+"buildCommand": "pip install -r bot/requirements.txt"
 },
 "deploy": {
 "startCommand": "python -m bot.main"
